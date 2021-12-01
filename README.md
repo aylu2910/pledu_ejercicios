@@ -1,4 +1,4 @@
-# pledu_ejercicios
+# Ejercicios Pledu
 
 
 ### Funciones
