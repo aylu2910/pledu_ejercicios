@@ -76,14 +76,7 @@ let actoresPrincipalesPorPelicula = {
 };
 let peliculaPorActor = {};
 
-const isInArray = (elemento, array) => {
-  for (e of array) {
-    if (e === elemento) {
-      return true;
-    }
-  }
-  return false;
-};
+const isInArray = (elemento, array) => array.includes(elemento)
 
 for (actor of actoresPrincipales) {
   if (isInArray(actor[0].toLowerCase(), vocales)) {
