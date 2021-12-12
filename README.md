@@ -1,4 +1,1 @@
 # Ejercicios Pledu
-
-
-### Funciones
