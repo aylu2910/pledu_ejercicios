@@ -14,9 +14,9 @@ class Libro {
 }
 
 let libro1 = new Libro("JK Rowling", "Santillan", "fantasia");
-let libro2 = new Libro("James Dashnner", "Penguin Random House", "Suspenso");
+let libro2 = new Libro("James Dashner", "Penguin Random House", "Suspenso");
 let libro3 = new Libro("E.A. Poe", "Manila", "gotico");
-let libro4 = new Libro("James Dashnner", "NY Editorial", "Suspenso");
+let libro4 = new Libro("James Dashner", "NY Editorial", "Suspenso");
 
 let libros = [libro1, libro2, libro3, libro4];
 
@@ -55,4 +55,4 @@ let libros = [libro1, libro2, libro3, libro4];
 let filtrarPorAutor = (arregloLibros, autor) =>
   arregloLibros.filter((libro) => libro.autor === autor);
 
-console.log(filtrarPorAutor(libros, "James Dashnner"));
+console.log(filtrarPorAutor(libros, "James Dashner"));
