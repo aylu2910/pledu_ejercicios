@@ -1,4 +1,4 @@
-software factory
+## Software factory
 
 Pensemos que somos una software factory (empresa de desarrollo) y tenemos un cliente que tiene varios artículos de tecnología. Este cliente nos plantea dos necesidades para su negocio:
 
