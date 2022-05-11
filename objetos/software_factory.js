@@ -7,7 +7,7 @@ const listarProductosTotal = (detalleProductos) => {
         productosDetalleTotal.push({ [producto.nombre] : calcularMontoTotal(producto) })
     }
 
-    console.log(productosDetalleTotal)
+    return productosDetalleTotal
 
 }
 
