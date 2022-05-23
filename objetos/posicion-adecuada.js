@@ -6,31 +6,25 @@ let arrayInput =
     { "nombre": "Katherine", "edad": 55 }]
 
 
-const posicionAdecuada = (arrayPersonas) => {
-    //variables auxiliares para poder obtener un valor de inicio y
-    //empezar a comparar los valores dentro del arreglo
-    let menorPersonaAuxiliar = arrayPersonas[0]
-    let menorEdadAuxiliar = arrayPersonas[0].edad
+const posicionAdecuada = (personas) => {
+    let personasConIndice = [];
 
-    //ordenamiento
-    for (let i = 0; i < arrayPersonas.length; i++) {
-        for (let j = 0; j < arrayPersonas.length; j++) {
-            if (arrayPersonas[i].edad < arrayPersonas[j].edad) {
-                menorEdadAuxiliar = arrayPersonas[j].edad
-                menorPersonaAuxiliar = arrayPersonas[j]
-                let personaAux = arrayPersonas[j]
-                arrayPersonas[j] = arrayPersonas[i]
-                arrayPersonas[i] = personaAux
-            }
+    let i = 0
+    while (personas.length) {
+      let menorPersona = personas[i];
+      for (let j = 0; j < personas.length; j++) {
+        if (menorPersona.edad > personas[j].edad) {
+          menorPersona = personas[j];
         }
+      }
+      // elimino el elemento de personas, obteniendo su indice en el arreglo
+      personas.splice(personas.indexOf(menorPersona), 1);
+      menorPersona.posicion = personasConIndice.length;
+      personasConIndice.push(menorPersona);
     }
-    //como ya se encuentra ordenado, solo agrego la propiedad posicion de acuerdo a i.
-    for (let i = 0; i < arrayPersonas.length; i++) {
-        arrayPersonas[i].posicion = i
 
-    }
-
-    return arrayPersonas
+    return personasConIndice
 }
 
+//test
 posicionAdecuada(arrayInput)
