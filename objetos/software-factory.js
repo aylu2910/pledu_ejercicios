@@ -1,4 +1,4 @@
-const calcularMontoTotal = (detalleProducto) => detalleProducto.precio* detalleProducto.artículos
+const calcularMontoTotal = (detalleProducto) => detalleProducto.precio * detalleProducto.artículos
 
 const listarProductosTotal = (detalleProductos) => {
     let productosDetalleTotal = []
