@@ -10,10 +10,10 @@ join(["h","o","l","a"]) debe retornar el string "hola".
 join(["c","h","a,"u"]) debe retornar el string "chau".
 */
 
-const join =(arreglo,string)=>{
+const join = (arreglo, string) => {
     let result = `${arreglo[0]}`
-    let limit = arreglo.length -1
-    for (let i =1;i<=limit;i++){
+    let limit = arreglo.length - 1
+    for (let i = 1 ;i <= limit; i++){
         result+=`${string}${arreglo[i]}`
     }
     return result
