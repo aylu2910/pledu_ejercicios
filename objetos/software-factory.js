@@ -1,4 +1,4 @@
-const calcularMontoTotal = (detalleProducto) => detalleProducto.precio * detalleProducto.artículos
+const calcularMontoTotal = (detalleProducto) => detalleProducto.precio * detalleProducto.articulos
 
 const listarProductosTotal = (detalleProductos) => {
     let productosDetalleTotal = []
@@ -11,8 +11,8 @@ const listarProductosTotal = (detalleProductos) => {
 
 }
 
-listarProductosTotal([{ nombre: "Samsung TV", precio: 6000, artículos:10}, 
-{nombre: "DELL notebook", precio: 4000, artículos:30 },
-{nombre:"Auriculares Sony", precio: 1500, artículos:15},
-{nombre:"Monitor Philips", precio:12000, artículos:20},
-{nombre:"Teclado logitech", precio: 3000, artículos:5}])
+listarProductosTotal([{ nombre: "Samsung TV", precio: 6000, articulos:10}, 
+{nombre: "DELL notebook", precio: 4000, articulos:30 },
+{nombre:"Auriculares Sony", precio: 1500, articulos:15},
+{nombre:"Monitor Philips", precio:12000, articulos:20},
+{nombre:"Teclado logitech", precio: 3000, articulos:5}])
