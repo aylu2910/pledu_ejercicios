@@ -55,4 +55,4 @@ let libros = [libro1, libro2, libro3, libro4];
 let filtrarPorAutor = (arregloLibros, autor) =>
   arregloLibros.filter((libro) => libro.autor === autor);
 
-console.log(filtrarPorAutor(libros, "James Dashner"));
+filtrarPorAutor(libros, "James Dashner");
